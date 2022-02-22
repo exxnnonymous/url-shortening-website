@@ -696,7 +696,7 @@ gap: 1rem;
     .nav_with_sign_btns{
         position: absolute;
         background-color: var(--primary-dark-violet);
-        top:65px;
+        top:85px;
         width: 100%;
         padding: 0;
         text-align: center;
