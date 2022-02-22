@@ -49,6 +49,7 @@ function handle_url_submit(e) {
   e.preventDefault();
   if (url_input.value.length === 0) {
     handle_invalid_url();
+    return
   }
   const url_input_value = url_input.value;
 
