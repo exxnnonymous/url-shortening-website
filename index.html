@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+
+
+    <title>Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <header>
+    <div class="max_width_wrap">
+      <div class="header_wrapper">
+        <a class="logo" href="/">
+          <img src="./images/logo.svg" alt="">
+        </a>
+        <button class="mobile_toggle_nav_icon">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav_with_sign_btns ">
+          <nav class="navigation_menu">
+            <a href="/features" class="nav_link">Features</a>
+            <a href="/pricing" class="nav_link">Pricing</a>
+            <a href="/resources" class="nav_link">Resources</a>
+          </nav>
+          <div class="signin_buttons">
+            <a href="/login" class="btn norm-btn">Login</a>
+            <a href="/signup" class="btn btn-bg-cyan round-btn">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <main>
+      <section class="hero">
+        <div class="max_width_wrap">
+          <div class="hero_wrapper">
+            <div class="hero_image">
+              <img
+                src="./images/illustration-working.svg"
+                alt="image of person working"
+              />
+            </div>
+            <div class="hero_info">
+              <h1 class="hero_title">More than just shorter links</h1>
+              <p>
+                Build your brand’s recognition and get detailed insights on how
+                your links are performing.
+              </p>
+              <a href="/get-started" class="btn btn-bg-cyan round-btn lg-btn"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="url_short_container">
+        <div id="url_short_bg"></div>
+        <div class="max_width_wrap">
+          <form  class="url_box_wrapper" id="url_form">
+            <div class="input_field">
+              <input
+                type="text"
+                class="url_short_input"
+                placeholder="Shorten a link here..."
+              />
+              <div class="input_err_msg">Please add a valid link</div>
+            </div>
+            <button type="submit" class="btn btn-bg-cyan short_url_btn hover_white_btn" id="submit_url">Shorten It!</button>
+          </form>
+        </div>
+      </section>
+      <section class="shorten_url_collection">
+          <div class="max_width_wrap">
+            <ul class="list_of_urls">
+                
+            </ul>
+          </div>
+      </section>
+      <section class="company_info">
+        <div class="max_width_wrap">
+          <div class="company_info_box">
+            <div class="company_heading">
+              <h1>Advanced Statistics</h1>
+              <p>
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
+              </p>
+            </div>
+            <div class="company_stats">
+              <div class="company_stats_cards">
+                <div class="company_crd_logo">
+                  <img
+                    src="./images/icon-brand-recognition.svg"
+                    alt="brand recognition icon"
+                  />
+                </div>
+                <h3>Brand Recognition</h3>
+                <article>
+                  Boost your brand recognition with each click. Generic links
+                  don’t mean a thing. Branded links help instil confidence in
+                  your content.
+                </article>
+              </div>
+              <div class="company_stats_cards">
+                <div class="company_crd_logo">
+                  <img
+                    src="./images/icon-detailed-records.svg"
+                    alt="detailed records icon"
+                  />
+                </div>
+                <h3 class="company_crd_title">  Detailed Records</h3>
+                <article>
+                  Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.
+                </article>
+              </div>
+              <div class="company_stats_cards">
+                <div class="company_crd_logo">
+                  <img
+                    src="./images/icon-fully-customizable.svg"
+                    alt="fully customizable icon"
+                  />
+                </div>
+                <h3 class="company_crd_title">Fully Customizable</h3>
+                <article>
+                  Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_top_footer">
+        <div class="max_width_wrap">
+          <h1>Boost your links today</h1>
+          <div class="top_footr_btn">
+            <a href="/get-started" class="btn btn-bg-cyan lg-btn round-btn hover_white_btn">Get Started</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="max_width_wrap">
+        <div class="footer_wrap">
+          <div class="footer_logo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="grid footer_nav_wrap">
+            <div class="footer_nav_item">
+                <h3>Features</h3>
+                <li><a href="/link-shortening">Link Shortening</a></li>
+                <li><a href="/branded-links">Branded Links</a></li>
+                <li><a href="/user-analytics">Analytics</a></li>
+            </div>
+            <div class="footer_nav_item">
+                <h3>Resources</h3>
+                <li><a href="/blogs">Blog</a></li>
+                <li><a href="/developers">Developers</a></li>
+                <li><a href="/support">Support</a></li>
+            </div>
+            <div class="footer_nav_item">
+                <h3>Company</h3>
+                <li><a href="/about">About</a></li>
+                <li><a href="/our-team">Our Team</a></li>
+                <li><a href="/careers">Careers</a></li>
+                <li><a href="/contacts">Contact</a></li>
+            </div>
+            <div class="footer_nav_item social_icons span-2-col">
+              <li >
+                <a href="#">
+                  <i class="fa-brands fa-facebook-square"></i>
+                </a>
+              </li>
+              <li >
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li >
+                <a href="#">
+                  <i class="fa-brands fa-pinterest"></i>
+                </a>
+              </li>
+              <li >
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <script src="./script.js"></script>
+  </body>
+</html>
